@@ -1,0 +1,28 @@
+.mainbtn{
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+   margin-left: 10px;
+   background-color:#7CB9E8;
+   border: 2px solid white;
+   border-radius: 10px;
+   font-size: 50px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.btn:hover{
+      background-color:#4889bb;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width:550px){
+    .btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+}

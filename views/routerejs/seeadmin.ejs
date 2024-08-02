@@ -1,0 +1,23 @@
+<% layout('layout/boilerplate') -%>
+<body>
+    <h1 class="Attendence-heading">All Admins</h1>
+    <div class="main-table">
+        <table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+  </tr>
+  <% for (const admin of admins) {%>
+     <tr>
+    <td><%= admin.name %></td>
+    <td><%= admin.username %></td>
+    <td><%= admin.email %></td>
+   
+  </tr>
+ <%  } %>
+ 
+  
+</table>
+    </div>
+</body>

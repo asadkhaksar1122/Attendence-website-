@@ -1,0 +1,20 @@
+
+   <% if (error && error.length) {%>
+        <p class="flash"><%= error %></p>
+        <script>
+          setTimeout(function(){
+            document.querySelector(".flash").style.display="none"
+          },5000)
+        </script>
+   <%  } %>
+   <% if (success && success.length) {%>
+        <p class="flash success"><%= success %></p>
+        <script>
+          setTimeout(function(){
+            document.querySelector(".flash").style.display="none"
+          },5000)
+        </script>
+   <%  } %>
+
+ 
+   </script>

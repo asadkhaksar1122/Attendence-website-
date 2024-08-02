@@ -1,0 +1,25 @@
+<% layout('layout/boilerplate') -%>
+<body>
+    <h1 class="Attendence-heading">Today Attendence</h1>
+    <div class="main-table">
+        <table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Date</th>
+    <th>Attendence</th>
+   
+  </tr>
+  <% for (const attendence of attendences) {%>
+     <tr>
+    <td><%= attendence.student.name %></td>
+    <td><%= attendence.student.username %></td>
+    <td><%= attendence.date %></td>
+    <td><%= attendence.attendence %></td>
+  </tr>
+ <%  } %>
+ 
+  
+</table>
+    </div>
+</body>

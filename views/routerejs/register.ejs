@@ -1,0 +1,28 @@
+<% layout('layout/boilerplate') -%>
+<body>
+    <h1 class="mainheading">Register into user portal</h1>
+    <form action="/register" method="post">
+        <div class="allinput">
+        <div class="name inputdiv">
+              <label for="username">Full Name
+              </label>
+              <input type="text" name="name" id="name" placeholder="name">
+        </div>
+        <div class="username inputdiv">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="Username">
+        </div>
+        <div class="email inputdiv">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="password inputdiv">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="password">
+        </div></div>
+        <div class="button">
+            <button type="submit">Register</button>
+        </div>
+      
+    </form>
+</body>
